@@ -479,7 +479,8 @@ a {
 .info-footer {
   margin-right: 94px;
 }
-.contact-us h3 {
+.contact-us h3,
+.form-subscribe span {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -676,4 +677,165 @@ a,
 .btn-close:hover,
 .btn-close:focus {
   background-color: rgba(0, 0, 0, 0.1);
+}
+/* form-footer*/
+.form-subscribe {
+  margin-left: 110px;
+}
+.form-subscribe .form-info {
+  margin-top: 20px;
+}
+.form-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px;
+  width: 358px;
+}
+.form-input:focus {
+  color: white;
+}
+.form-button {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  border: none;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  position: relative;
+}
+.form-info {
+  display: flex;
+  flex-direction: row;
+}
+.fa-paper-plane {
+  margin-left: 25px;
+}
+.form-button:hover,
+.form-button:focus {
+  background: #4e8abb;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* form-modal*/
+.form-modal {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-modal > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #212121;
+}
+.form-label .form-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  padding-bottom: 4px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-label input,
+.form-label textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-modal .form-icon {
+  position: absolute;
+  top: 32px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+  bottom: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+}
+.form-label input {
+  height: 40px;
+  padding-left: 40px;
+}
+.form-label textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-label .input:focus-within {
+  outline: none;
+  border: 2px solid var(--interactiv-color);
+}
+
+.form-label textarea {
+  padding: 15px;
+}
+.form-check {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.checkbox {
+  margin-right: 8px;
+}
+.check a {
+  margin-left: 2px;
+  color: var(--interactiv-color);
+  text-decoration: underline;
+}
+.sub-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.sub-btn:focus,
+.sub-btn:hover {
+  background-color: #4f90c6;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-7px);
 }
