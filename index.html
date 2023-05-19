@@ -577,8 +577,6 @@
               placeholder="sophie@example.com"
               minlength="3"
               maxlength="64"
-              pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-"
               required
             />
             <svg class="form-icon">
@@ -596,8 +594,25 @@
             ></textarea>
           </label>
           <div class="form-check">
-            <input class="checkbox" type="checkbox" name="check" required />
-            <label class="check">
+            <label class="check" for="myCheckboxId">
+              <input
+                class="ckeckbox_input"
+                type="checkbox"
+                name="check"
+                id="myCheckboxId"
+                required
+              />
+              <div class="checkbox_box_svg">
+                <svg>
+                  <use href="/images/icons.svg#check1"></use>
+                </svg>
+              </div>
+              <div class="checkbox_box">
+                <svg>
+                  <use href="/images/icons.svg#vector"></use>
+                </svg>
+              </div>
+
               <span>I agree with the letter and accept the</span
               ><a class="link">Terms and Conditions</a>
             </label>

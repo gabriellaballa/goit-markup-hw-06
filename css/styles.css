@@ -112,6 +112,7 @@ a {
   justify-content: center;
   margin-top: 40px;
   cursor: pointer;
+  outline: none;
 }
 .whatwedo {
   display: flex;
@@ -795,8 +796,11 @@ a,
 .form-label .input:focus-within {
   outline: none;
   border: 2px solid var(--interactiv-color);
+  color: black;
 }
-
+.input:focus ~ .form-icon {
+  fill: var(--interactiv-color);
+}
 .form-label textarea {
   padding: 15px;
 }
@@ -805,13 +809,38 @@ a,
   flex-direction: row;
   margin-top: 20px;
 }
-.checkbox {
-  margin-right: 8px;
+.form-check svg {
+  width: 14px;
+  height: 14px;
+}
+.check {
+  position: relative;
+}
+.ckeckbox_input {
+  display: none;
+}
+.checkbox_box_svg {
+  visibility: hidden;
+  position: absolute;
+}
+.checkbox_box {
+  visibility: visible;
+  position: absolute;
+}
+.ckeckbox_input:checked + .checkbox_box_svg {
+  visibility: visible;
+}
+
+.ckeckbox_input:checked + .checkbox_box {
+  visibility: hidden;
 }
 .check a {
   margin-left: 2px;
   color: var(--interactiv-color);
   text-decoration: underline;
+}
+.check span {
+  margin-left: 16px;
 }
 .sub-btn {
   width: 200px;
