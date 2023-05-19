@@ -797,9 +797,11 @@ a,
   outline: none;
   border: 2px solid var(--interactiv-color);
   color: black;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 input:focus + .form-icon {
   fill: var(--interactiv-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label textarea {
@@ -821,19 +823,19 @@ input:focus + .form-icon {
   display: none;
 }
 .checkbox_box_svg {
-  visibility: hidden;
+  display: none;
   position: absolute;
 }
 .checkbox_box {
-  visibility: visible;
+  display: block;
   position: absolute;
 }
 .ckeckbox_input:checked + .checkbox_box_svg {
-  visibility: visible;
+  display: block;
 }
 
 .ckeckbox_input:checked + .checkbox_box {
-  visibility: hidden;
+  display: none;
 }
 .check a {
   margin-left: 2px;
