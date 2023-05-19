@@ -798,9 +798,10 @@ a,
   border: 2px solid var(--interactiv-color);
   color: black;
 }
-.input:focus ~ .form-icon {
+input:focus + .form-icon {
   fill: var(--interactiv-color);
 }
+
 .form-label textarea {
   padding: 15px;
 }
@@ -840,7 +841,7 @@ a,
   text-decoration: underline;
 }
 .check span {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 .sub-btn {
   width: 200px;
