@@ -727,7 +727,7 @@ a,
 .form-button:hover,
 .form-button:focus {
   background: #4e8abb;
-  transition-duration: 250ms;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* form-modal*/
@@ -866,7 +866,7 @@ input:focus + .form-icon {
 .sub-btn:focus,
 .sub-btn:hover {
   background-color: #4f90c6;
-  transition-duration: 250ms;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   transform: translateY(-7px);
